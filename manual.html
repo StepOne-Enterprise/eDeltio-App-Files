@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eDeltio — Εγχειρίδιο Χρήσης</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; color: #222; line-height: 1.7; }
+        header { background: linear-gradient(135deg, #093F68, #005AA9); color: white; padding: 32px 24px; border-radius: 8px; margin-bottom: 36px; }
+        header h1 { font-size: 2em; margin-bottom: 4px; }
+        header p { opacity: 0.85; font-size: 0.95em; }
+        h2 { color: #093F68; font-size: 1.3em; margin: 36px 0 12px; border-bottom: 2px solid #005AA9; padding-bottom: 6px; }
+        h3 { color: #005AA9; font-size: 1.05em; margin: 24px 0 8px; }
+        p { margin-bottom: 12px; }
+        ul, ol { padding-left: 24px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; }
+        .step { background: #f0f6ff; border-left: 4px solid #005AA9; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+        .warning { background: #fff8e1; border-left: 4px solid #f9a825; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+        .tip { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th { background: #093F68; color: white; padding: 10px 12px; text-align: left; font-size: 0.9em; }
+        td { padding: 9px 12px; border-bottom: 1px solid #e0e0e0; font-size: 0.9em; }
+        tr:nth-child(even) td { background: #f5f8ff; }
+        .chip { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.82em; font-weight: bold; }
+        .chip-blue { background: #DBEAFE; color: #1E40AF; }
+        .chip-yellow { background: #FEF3C7; color: #92400E; }
+        .chip-green { background: #D1FAE5; color: #065F46; }
+        .chip-red { background: #FFE4E6; color: #9F1239; }
+        .chip-purple { background: #EDE9FE; color: #5B21B6; }
+        .chip-gray { background: #F3F4F6; color: #374151; }
+        footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; color: #888; font-size: 0.85em; text-align: center; }
+        a { color: #005AA9; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>eDeltio</h1>
+    <p>Εγχειρίδιο Χρήσης &nbsp;·&nbsp; by StepOne SA &nbsp;·&nbsp; Έκδοση 1.1</p>
+</header>
+
+<nav>
+    <p><strong>Περιεχόμενα:</strong>
+    <a href="#install">Εγκατάσταση</a> ·
+    <a href="#settings">Ρυθμίσεις</a> ·
+    <a href="#status">Κατάσταση Δελτίου</a> ·
+    <a href="#transfer">Καταχώριση Μεταφοράς</a> ·
+    <a href="#outcome">Επιβεβαίωση Παράδοσης</a> ·
+    <a href="#statuses">Καταστάσεις</a> ·
+    <a href="#errors">Σφάλματα</a> ·
+    <a href="#contact">Επικοινωνία</a>
+    </p>
+</nav>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="install">1. Εγκατάσταση</h2>
+
+<p>Η εφαρμογή eDeltio διανέμεται μέσω <strong>Google Play Store</strong> και απαιτεί Android 7.0 ή νεότερο.</p>
+
+<div class="step">
+    <strong>Βήμα 1:</strong> Ανοίξτε το σύνδεσμο εγκατάστασης που σας έστειλε ο διαχειριστής σας.<br>
+    <strong>Βήμα 2:</strong> Πατήστε <em>«Εγκατάσταση»</em> στο Google Play Store.<br>
+    <strong>Βήμα 3:</strong> Μετά την εγκατάσταση ανοίξτε την εφαρμογή και προχωρήστε στις Ρυθμίσεις.
+</div>
+
+<div class="warning">
+    <strong>Σημείωση:</strong> Η εφαρμογή απαιτεί διαπιστευτήρια AADE myDATA για να λειτουργήσει. Επικοινωνήστε με τον διαχειριστή σας για να τα λάβετε.
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="settings">2. Ρυθμίσεις</h2>
+
+<p>Κατά την πρώτη εκκίνηση η εφαρμογή σας μεταφέρει αυτόματα στις Ρυθμίσεις.</p>
+
+<h3>Γλώσσα</h3>
+<p>Επιλέξτε <strong>Ελληνικά</strong> ή <strong>English</strong>. Η αλλαγή εφαρμόζεται αμέσως.</p>
+
+<h3>Περιβάλλον AADE</h3>
+<table>
+    <tr><th>Επιλογή</th><th>Χρήση</th></tr>
+    <tr><td><strong>Παραγωγή</strong> (προεπιλογή)</td><td>Πραγματικά δεδομένα — για καθημερινή χρήση</td></tr>
+    <tr><td><strong>Ανάπτυξη (DEV)</strong></td><td>Δοκιμαστικό περιβάλλον AADE — μόνο για δοκιμές</td></tr>
+</table>
+
+<div class="warning">
+    <strong>Προσοχή:</strong> Βεβαιωθείτε ότι έχετε επιλέξει <strong>Παραγωγή</strong> για κανονική χρήση. Το DEV περιβάλλον δεν περιέχει πραγματικά δελτία.
+</div>
+
+<h3>Διαπιστευτήρια AADE</h3>
+<ul>
+    <li><strong>User ID:</strong> Ο κωδικός χρήστη AADE που σας έχει δοθεί</li>
+    <li><strong>Subscription Key:</strong> Το κλειδί συνδρομής AADE (αποθηκεύεται κρυπτογραφημένο)</li>
+</ul>
+
+<h3>ERP URL</h3>
+<p>Η διεύθυνση του ERP συστήματός σας (π.χ. <code>https://erp.yourcompany.gr</code>). Χρησιμοποιείται για τις κλήσεις καταχώρισης.</p>
+
+<div class="step">
+    Μετά τη συμπλήρωση όλων των πεδίων πατήστε <strong>«Αποθήκευση»</strong>.
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="status">3. Έλεγχος Κατάστασης Δελτίου</h2>
+
+<p>Από την κεντρική οθόνη μπορείτε να ελέγξετε την κατάσταση ενός δελτίου αποστολής.</p>
+
+<h3>Με σάρωση QR</h3>
+<div class="step">
+    <strong>Βήμα 1:</strong> Πατήστε το εικονίδιο κάμερας.<br>
+    <strong>Βήμα 2:</strong> Σκανάρετε το QR code του δελτίου αποστολής.<br>
+    <strong>Βήμα 3:</strong> Η εφαρμογή εντοπίζει αυτόματα τον αριθμό MARK και εμφανίζει την κατάσταση.
+</div>
+
+<h3>Με χειροκίνητη εισαγωγή MARK</h3>
+<div class="step">
+    <strong>Βήμα 1:</strong> Πληκτρολογήστε τον αριθμό MARK στο πεδίο εισαγωγής.<br>
+    <strong>Βήμα 2:</strong> Πατήστε <strong>«Αναζήτηση»</strong>.
+</div>
+
+<div class="tip">
+    <strong>Συμβουλή:</strong> Το QR code μπορεί να είναι είτε απλό (περιέχει απευθείας τον MARK) είτε κρυπτογραφημένο AADE (URL τύπου TimologioQR). Και οι δύο τύποι υποστηρίζονται αυτόματα.
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="transfer">4. Καταχώριση Μεταφοράς</h2>
+
+<p>Χρησιμοποιείται για να δηλώσετε την ανάληψη ενός δελτίου αποστολής από τον μεταφορέα.</p>
+
+<div class="step">
+    <strong>Βήμα 1:</strong> Σκανάρετε ή εισάγετε τον αριθμό MARK.<br>
+    <strong>Βήμα 2:</strong> Επιβεβαιώστε το ΑΦΜ μεταφορέα (προσυμπληρώνεται από τις ρυθμίσεις).<br>
+    <strong>Βήμα 3:</strong> Πατήστε <strong>«Καταχώριση»</strong>.<br>
+    <strong>Αποτέλεσμα:</strong> Εμφανίζεται ο Transfer MARK επιβεβαίωσης.
+</div>
+
+<div class="warning">
+    <strong>Προσοχή:</strong> Η καταχώριση μεταφοράς είναι δυνατή μόνο αν το δελτίο βρίσκεται σε κατάλληλη κατάσταση. Αν λάβετε σφάλμα 800, το δελτίο έχει ήδη ανατεθεί σε μεταφορέα.
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="outcome">5. Επιβεβαίωση Παράδοσης</h2>
+
+<p>Χρησιμοποιείται μετά την παράδοση για να δηλώσετε το αποτέλεσμα.</p>
+
+<div class="step">
+    <strong>Βήμα 1:</strong> Σκανάρετε ή εισάγετε τον αριθμό MARK.<br>
+    <strong>Βήμα 2:</strong> Επιλέξτε αποτέλεσμα παράδοσης:
+    <ul>
+        <li><strong>Delivered</strong> — Πλήρης παράδοση</li>
+        <li><strong>Partial</strong> — Μερική παράδοση (απαιτεί στοιχεία συσκευασίας)</li>
+        <li><strong>Failed</strong> — Αποτυχία παράδοσης</li>
+    </ul>
+    <strong>Βήμα 3 (για Partial):</strong> Επιλέξτε τύπο και ποσότητα συσκευασίας.<br>
+    <strong>Βήμα 4:</strong> Πατήστε <strong>«Επιβεβαίωση»</strong>.
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="statuses">6. Καταστάσεις Δελτίου</h2>
+
+<table>
+    <tr><th>Κατάσταση</th><th>Ένδειξη</th><th>Σημασία</th></tr>
+    <tr><td><span class="chip chip-blue">REGISTERED</span></td><td>Μπλε</td><td>Το δελτίο έχει καταχωριστεί στο σύστημα</td></tr>
+    <tr><td><span class="chip chip-yellow">DISPATCHED</span></td><td>Κίτρινο</td><td>Έχει ανατεθεί σε μεταφορέα</td></tr>
+    <tr><td><span class="chip chip-yellow">IN_TRANSIT</span></td><td>Κίτρινο</td><td>Σε μεταφορά</td></tr>
+    <tr><td><span class="chip chip-green">DELIVERED</span></td><td>Πράσινο</td><td>Παραδόθηκε επιτυχώς</td></tr>
+    <tr><td><span class="chip chip-purple">PARTIAL_DELIVERY</span></td><td>Μωβ</td><td>Μερική παράδοση</td></tr>
+    <tr><td><span class="chip chip-red">DELIVERY_FAILED</span></td><td>Κόκκινο</td><td>Η παράδοση απέτυχε</td></tr>
+    <tr><td><span class="chip chip-gray">CANCELLED</span></td><td>Γκρι</td><td>Το δελτίο ακυρώθηκε</td></tr>
+</table>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="errors">7. Συνηθισμένα Σφάλματα</h2>
+
+<table>
+    <tr><th>Σφάλμα</th><th>Αιτία</th><th>Λύση</th></tr>
+    <tr><td>807 Invalid QR</td><td>Το QR δεν ανήκει σε δελτίο αποστολής</td><td>Βεβαιωθείτε ότι σκανάρετε το σωστό QR</td></tr>
+    <tr><td>800 ValidationError</td><td>Το δελτίο δεν επιτρέπει αυτή την ενέργεια</td><td>Ελέγξτε πρώτα την κατάσταση του δελτίου</td></tr>
+    <tr><td>404 Not found</td><td>Ο MARK δεν βρέθηκε στο σύστημα</td><td>Επαληθεύστε τον αριθμό MARK</td></tr>
+    <tr><td>403 Forbidden</td><td>Λάθος διαπιστευτήρια</td><td>Ελέγξτε User ID και Subscription Key στις Ρυθμίσεις</td></tr>
+    <tr><td>Invalid Greek VAT</td><td>Λάθος μορφή ΑΦΜ</td><td>Επαληθεύστε το ΑΦΜ (9 ψηφία)</td></tr>
+    <tr><td>QR resolution failed</td><td>Αδυναμία ανάγνωσης κρυπτογραφημένου QR</td><td>Εισάγετε τον MARK χειροκίνητα</td></tr>
+    <tr><td>No internet connection</td><td>Δεν υπάρχει σύνδεση</td><td>Ελέγξτε Wi-Fi ή δεδομένα κινητής</td></tr>
+</table>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="contact">8. Επικοινωνία &amp; Υποστήριξη</h2>
+
+<p>Για τεχνική υποστήριξη ή απόκτηση διαπιστευτηρίων AADE επικοινωνήστε με:</p>
+<ul>
+    <li><strong>Email:</strong> <a href="mailto:info@stepone.gr">info@stepone.gr</a></li>
+    <li><strong>Ιστότοπος:</strong> <a href="https://stepone.gr" target="_blank">stepone.gr</a></li>
+</ul>
+
+<footer>
+    eDeltio by StepOne SA &nbsp;·&nbsp; <a href="./index.html">Πολιτική Απορρήτου</a>
+</footer>
+
+</body>
+</html>
