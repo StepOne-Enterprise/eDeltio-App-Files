@@ -3,35 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eDeltio - Πολιτική Απορρήτου</title>
+    <title>eDeltio — Εγχειρίδιο Χρήσης</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
-        h1 { color: #093F68; }
-        h2 { color: #005AA9; margin-top: 30px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; color: #222; line-height: 1.7; }
+        header { background: linear-gradient(135deg, #093F68, #005AA9); color: white; padding: 32px 24px; border-radius: 8px; margin-bottom: 36px; }
+        header h1 { font-size: 2em; margin-bottom: 4px; }
+        header p { opacity: 0.85; font-size: 0.95em; }
+        h2 { color: #093F68; font-size: 1.3em; margin: 36px 0 12px; border-bottom: 2px solid #005AA9; padding-bottom: 6px; }
+        h3 { color: #005AA9; font-size: 1.05em; margin: 24px 0 8px; }
+        p { margin-bottom: 12px; }
+        ul, ol { padding-left: 24px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; }
+        .step { background: #f0f6ff; border-left: 4px solid #005AA9; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+        .warning { background: #fff8e1; border-left: 4px solid #f9a825; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+        .tip { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 12px 16px; margin: 12px 0; border-radius: 0 6px 6px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th { background: #093F68; color: white; padding: 10px 12px; text-align: left; font-size: 0.9em; }
+        td { padding: 9px 12px; border-bottom: 1px solid #e0e0e0; font-size: 0.9em; }
+        tr:nth-child(even) td { background: #f5f8ff; }
+        .chip { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.82em; font-weight: bold; }
+        .chip-blue { background: #DBEAFE; color: #1E40AF; }
+        .chip-yellow { background: #FEF3C7; color: #92400E; }
+        .chip-green { background: #D1FAE5; color: #065F46; }
+        .chip-red { background: #FFE4E6; color: #9F1239; }
+        .chip-purple { background: #EDE9FE; color: #5B21B6; }
+        .chip-gray { background: #F3F4F6; color: #374151; }
+        .screenshot { display: block; max-width: 320px; width: 100%; margin: 16px auto; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.15); border: 1px solid #e0e0e0; }
+        .screenshot-caption { text-align: center; font-size: 0.82em; color: #666; margin-bottom: 20px; margin-top: -8px; }
+        a { color: #005AA9; }
     </style>
 </head>
 <body>
-    <h1>Πολιτική Απορρήτου — eDeltio</h1>
-    <p><em>Τελευταία ενημέρωση: Σεπτέμβριος 2026</em></p>
-    <p>Η εφαρμογή eDeltio αναπτύχθηκε από την <strong>StepOne SA</strong>.</p>
 
-    <h2>Δεδομένα που αποθηκεύονται</h2>
-    <p>Η εφαρμογή αποθηκεύει τοπικά στη συσκευή σας:</p>
+<header>
+    <h1>eDeltio</h1>
+    <p>Εγχειρίδιο Χρήσης &nbsp;·&nbsp; by StepOne SA &nbsp;·&nbsp; Έκδοση 1.5</p>
+</header>
+
+<nav>
+    <p><strong>Περιεχόμενα:</strong>
+    <a href="#install">Εγκατάσταση</a> ·
+    <a href="#settings">Ρυθμίσεις</a> ·
+    <a href="#actions">Διαθέσιμες Ενέργειες</a> ·
+    <a href="#transfer">Έναρξη Διακίνησης</a> ·
+    <a href="#outcome">Επιβεβαίωση Παράδοσης</a> ·
+    <a href="#status-detail">Κατάσταση Δελτίου</a> ·
+    <a href="#groupqr">Στοιχεία Ομαδικού QR</a> ·
+    <a href="#scanreceipt">Σκανάρισμα Παραλαβής</a> ·
+    <a href="#statuses">Καταστάσεις</a> ·
+    <a href="#errors">Σφάλματα</a> ·
+    <a href="#contact">Επικοινωνία</a>
+    </p>
+</nav>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="install">1. Εγκατάσταση</h2>
+
+<p>Η εφαρμογή eDeltio διανέμεται μέσω <strong>Google Play Store</strong> και απαιτεί Android 7.0 ή νεότερο.</p>
+
+<div class="step">
+    <strong>Βήμα 1:</strong> Ανοίξτε το σύνδεσμο εγκατάστασης που σας έστειλε ο διαχειριστής σας.<br>
+    <strong>Βήμα 2:</strong> Πατήστε <em>«Εγκατάσταση»</em> στο Google Play Store.<br>
+    <strong>Βήμα 3:</strong> Μετά την εγκατάσταση ανοίξτε την εφαρμογή και προχωρήστε στις Ρυθμίσεις.
+</div>
+
+<div class="warning">
+    <strong>Σημείωση:</strong> Η εφαρμογή απαιτεί διαπιστευτήρια AADE myDATA για να λειτουργήσει. Επικοινωνήστε με τον διαχειριστή σας για να τα λάβετε.
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="settings">2. Ρυθμίσεις</h2>
+
+<p>Κατά την πρώτη εκκίνηση η εφαρμογή σας μεταφέρει αυτόματα στις Ρυθμίσεις.</p>
+
+<h3>Γλώσσα</h3>
+<p>Επιλέξτε <strong>Ελληνικά</strong> ή <strong>English</strong>. Η αλλαγή εφαρμόζεται αμέσως.</p>
+
+<h3>Περιβάλλον AADE</h3>
+<table>
+    <tr><th>Επιλογή</th><th>Χρήση</th></tr>
+    <tr><td><strong>Παραγωγή</strong> (προεπιλογή)</td><td>Πραγματικά δεδομένα — για καθημερινή χρήση</td></tr>
+    <tr><td><strong>Ανάπτυξη (DEV)</strong></td><td>Δοκιμαστικό περιβάλλον AADE — μόνο για δοκιμές</td></tr>
+</table>
+
+<div class="warning">
+    <strong>Προσοχή:</strong> Βεβαιωθείτε ότι έχετε επιλέξει <strong>Παραγωγή</strong> για κανονική χρήση. Το DEV περιβάλλον δεν περιέχει πραγματικά δελτία.
+</div>
+
+<h3>Διαπιστευτήρια AADE</h3>
+<ul>
+    <li><strong>User ID:</strong> Ο κωδικός χρήστη AADE που σας έχει δοθεί</li>
+    <li><strong>Subscription Key:</strong> Το κλειδί συνδρομής AADE (αποθηκεύεται κρυπτογραφημένο)</li>
+</ul>
+
+<h3>Ενσωμάτωση ERP (Power Automate)</h3>
+<p>Το πεδίο αυτό απαιτείται για τη λειτουργία <strong>Σκανάρισμα Παραλαβής</strong>. Συμπληρώστε το URL του HTTP trigger του Power Automate που παρέχεται από τον διαχειριστή του συστήματος SAP.</p>
+<div class="warning">
+    <strong>Σημείωση:</strong> Αν το πεδίο αυτό είναι κενό, η αποστολή δεδομένων στο SAP δεν θα πραγματοποιείται.
+</div>
+
+<div class="step">
+    Μετά τη συμπλήρωση όλων των πεδίων πατήστε <strong>«Αποθήκευση»</strong>.
+</div>
+
+<img src="images/screenshot_settings.png" alt="Οθόνη Ρυθμίσεων" class="screenshot">
+<p class="screenshot-caption">Εικ. 1 — Οθόνη Ρυθμίσεων</p>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="actions">3. Διαθέσιμες Ενέργειες</h2>
+
+<p>Μετά την αποθήκευση των ρυθμίσεων εμφανίζεται η κεντρική οθόνη με τις διαθέσιμες ενέργειες:</p>
+
+<img src="images/screenshot_home.png" alt="Κεντρική οθόνη — διαθέσιμες ενέργειες" class="screenshot">
+<p class="screenshot-caption">Εικ. 2 — Κεντρική οθόνη με τις διαθέσιμες ενέργειες</p>
+
+<table>
+    <tr><th>#</th><th>Ενέργεια</th><th>Περιγραφή</th></tr>
+    <tr><td>1</td><td><strong>Έναρξη Διακίνησης</strong></td><td>Δήλωση ανάληψης δελτίου από μεταφορέα</td></tr>
+    <tr><td>2</td><td><strong>Επιβεβαίωση Παράδοσης</strong></td><td>Καταχώριση αποτελέσματος παράδοσης</td></tr>
+    <tr><td>3</td><td><strong>Κατάσταση Δελτίου</strong></td><td>Έλεγχος τρέχουσας κατάστασης δελτίου αποστολής</td></tr>
+    <tr><td>4</td><td><strong>Στοιχεία Ομαδικού QR</strong></td><td>Διαχείριση ομαδικού QR αποστολής</td></tr>
+    <tr><td>5</td><td><strong>Σκανάρισμα Παραλαβής</strong></td><td>Αναζήτηση παραστατικού AADE και αποστολή στοιχείων στο SAP</td></tr>
+</table>
+
+<p>Οι ενέργειες 1–4 αφορούν τη διαχείριση δελτίων αποστολής. Η ενέργεια 5 αφορά την παραλαβή εμπορευμάτων και την ενημέρωση του SAP.</p>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="transfer">4. Έναρξη Διακίνησης</h2>
+
+<p>Χρησιμοποιείται για να δηλώσετε την ανάληψη ενός δελτίου αποστολής από τον μεταφορέα.</p>
+
+<div class="step">
+    <strong>Βήμα 1:</strong> Σκανάρετε ή εισάγετε τον αριθμό MARK.<br>
+    <strong>Βήμα 2:</strong> Επιβεβαιώστε το ΑΦΜ μεταφορέα (προσυμπληρώνεται από τις ρυθμίσεις).<br>
+    <strong>Βήμα 3:</strong> Πατήστε <strong>«Καταχώριση»</strong>.<br>
+    <strong>Αποτέλεσμα:</strong> Εμφανίζεται ο Transfer MARK επιβεβαίωσης.
+</div>
+
+<div class="warning">
+    <strong>Προσοχή:</strong> Η καταχώριση μεταφοράς είναι δυνατή μόνο αν το δελτίο βρίσκεται σε κατάλληλη κατάσταση. Αν λάβετε σφάλμα 800, το δελτίο έχει ήδη ανατεθεί σε μεταφορέα.
+</div>
+
+<img src="images/screenshot_transfer.png" alt="Οθόνη Καταχώρισης Μεταφοράς" class="screenshot">
+<p class="screenshot-caption">Εικ. 3 — Έναρξη Διακίνησης</p>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="outcome">5. Επιβεβαίωση Παράδοσης</h2>
+
+<p>Χρησιμοποιείται μετά την παράδοση για να δηλώσετε το αποτέλεσμα.</p>
+
+<div class="step">
+    <strong>Βήμα 1:</strong> Σκανάρετε ή εισάγετε τον αριθμό MARK.<br>
+    <strong>Βήμα 2:</strong> Επιλέξτε αποτέλεσμα παράδοσης:
     <ul>
-        <li>Κωδικό χρήστη AADE (User ID)</li>
-        <li>Κλειδί συνδρομής AADE (Subscription Key) — κρυπτογραφημένο</li>
-        <li>Διεύθυνση URL του ERP συστήματός σας</li>
+        <li><strong>Delivered</strong> — Πλήρης παράδοση</li>
+        <li><strong>Partial</strong> — Μερική παράδοση (απαιτεί στοιχεία συσκευασίας)</li>
+        <li><strong>Failed</strong> — Αποτυχία παράδοσης</li>
     </ul>
-    <p>Τα δεδομένα αυτά <strong>δεν κοινοποιούνται σε τρίτους</strong> και χρησιμοποιούνται αποκλειστικά για την επικοινωνία με τις υπηρεσίες AADE myDATA.</p>
+    <strong>Βήμα 3 (για Partial):</strong> Επιλέξτε τύπο και ποσότητα συσκευασίας.<br>
+    <strong>Βήμα 4:</strong> Πατήστε <strong>«Επιβεβαίωση»</strong>.
+</div>
 
-    <h2>Ασφάλεια</h2>
-    <p>Χρησιμοποιούμε κρυπτογράφηση AES-256 μέσω του Android Keystore για την προστασία των διαπιστευτηρίων σας.</p>
+<img src="images/screenshot_outcome.png" alt="Οθόνη Επιβεβαίωσης Παράδοσης" class="screenshot">
+<p class="screenshot-caption">Εικ. 4 — Επιβεβαίωση Παράδοσης</p>
 
-    <h2>Διαγραφή δεδομένων</h2>
-    <p>Μπορείτε να διαγράψετε όλα τα αποθηκευμένα δεδομένα από τις <strong>Ρυθμίσεις</strong> της εφαρμογής ή απεγκαθιστώντας την εφαρμογή.</p>
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="status-detail">6. Κατάσταση Δελτίου</h2>
 
-    <h2>Επικοινωνία</h2>
-    <p>Email: <a href="mailto:info@stepone.gr">info@stepone.gr</a><br>
-    Ιστότοπος: <a href="https://stepone.gr">stepone.gr</a></p>
+<p>Από την κεντρική οθόνη μπορείτε να ελέγξετε την κατάσταση ενός δελτίου αποστολής.</p>
+
+<h3>Με σάρωση QR</h3>
+<div class="step">
+    <strong>Βήμα 1:</strong> Πατήστε το εικονίδιο κάμερας.<br>
+    <strong>Βήμα 2:</strong> Σκανάρετε το QR code του δελτίου αποστολής.<br>
+    <strong>Βήμα 3:</strong> Η εφαρμογή εντοπίζει αυτόματα τον αριθμό MARK και εμφανίζει την κατάσταση.
+</div>
+
+<h3>Με χειροκίνητη εισαγωγή MARK</h3>
+<div class="step">
+    <strong>Βήμα 1:</strong> Πληκτρολογήστε τον αριθμό MARK στο πεδίο εισαγωγής.<br>
+    <strong>Βήμα 2:</strong> Πατήστε <strong>«Αναζήτηση»</strong>.
+</div>
+
+<div class="tip">
+    <strong>Συμβουλή:</strong> Το QR code μπορεί να είναι είτε απλό (περιέχει απευθείας τον MARK) είτε κρυπτογραφημένο AADE (URL τύπου TimologioQR). Και οι δύο τύποι υποστηρίζονται αυτόματα.
+</div>
+
+<img src="images/screenshot_status.png" alt="Οθόνη Κατάστασης — εισαγωγή MARK" class="screenshot">
+<p class="screenshot-caption">Εικ. 5 — Εισαγωγή MARK</p>
+
+<img src="images/screenshot_status_result.png" alt="Οθόνη Κατάστασης — αποτέλεσμα" class="screenshot">
+<p class="screenshot-caption">Εικ. 6 — Αποτέλεσμα αναζήτησης με χρωματιστή ένδειξη κατάστασης</p>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="groupqr">7. Στοιχεία Ομαδικού QR</h2>
+
+<p>Χρησιμοποιείται για τη διαχείριση ομαδικής αποστολής — όταν πολλά δελτία αποστολής ομαδοποιούνται κάτω από ένα κοινό QR αναγνωριστικό.</p>
+
+<div class="step">
+    <strong>Βήμα 1:</strong> Σκανάρετε το Group QR code ή εισάγετε χειροκίνητα το Group ID.<br>
+    <strong>Βήμα 2:</strong> Η εφαρμογή εμφανίζει τα δελτία που ανήκουν στην ομάδα.<br>
+    <strong>Βήμα 3:</strong> Επιλέξτε την ενέργεια που θέλετε να εκτελέσετε.
+</div>
+
+<div class="warning">
+    <strong>Σημείωση:</strong> Η λειτουργία Group QR απαιτεί έγκυρο Group ID από το σύστημα AADE. Επικοινωνήστε με τον διαχειριστή σας για περισσότερες πληροφορίες.
+</div>
+
+<img src="images/screenshot_group_qr.png" alt="Οθόνη Group QR" class="screenshot">
+<p class="screenshot-caption">Εικ. 7 — Στοιχεία Ομαδικού QR</p>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="scanreceipt">8. Σκανάρισμα Παραλαβής</h2>
+
+<p>Χρησιμοποιείται για την αναζήτηση παραστατικού στο σύστημα AADE με βάση τον αριθμό MARK και την αυτόματη αποστολή των στοιχείων στο σύστημα SAP μέσω Power Automate.</p>
+
+<div class="step">
+    <strong>Βήμα 1:</strong> Εισάγετε τον αριθμό MARK του παραστατικού ή σκανάρετε το QR code.<br>
+    <strong>Βήμα 2:</strong> Πατήστε <strong>«Αναζήτηση»</strong>.<br>
+    <strong>Βήμα 3:</strong> Η εφαρμογή εμφανίζει τα στοιχεία του παραστατικού και ταυτόχρονα τα αποστέλλει αυτόματα στο SAP.
+</div>
+
+<h3>Στοιχεία που εμφανίζονται</h3>
+<table>
+    <tr><th>Πεδίο</th><th>Περιγραφή</th></tr>
+    <tr><td><strong>ΜΑΡΚ</strong></td><td>Μοναδικός αριθμός καταχώρησης παραστατικού</td></tr>
+    <tr><td><strong>ΑΦΜ Προμηθευτή</strong></td><td>ΑΦΜ του εκδότη του παραστατικού</td></tr>
+    <tr><td><strong>Σειρά</strong></td><td>Σειρά παραστατικού</td></tr>
+    <tr><td><strong>ΑΑ</strong></td><td>Αύξων αριθμός παραστατικού</td></tr>
+    <tr><td><strong>Ημερομηνία Έκδοσης</strong></td><td>Ημερομηνία έκδοσης παραστατικού</td></tr>
+    <tr><td><strong>Είδος Παραστατικού</strong></td><td>Κωδικός τύπου παραστατικού (π.χ. 9.3)</td></tr>
+    <tr><td><strong>AADE User</strong></td><td>Ο χρήστης που εκτέλεσε την αναζήτηση</td></tr>
+    <tr><td><strong>Ώρα Σκαναρίσματος</strong></td><td>Ημερομηνία και ώρα αναζήτησης</td></tr>
+</table>
+
+<h3>Κατάσταση αποστολής στο SAP</h3>
+<p>Στο κάτω μέρος της κάρτας αποτελέσματος εμφανίζεται η κατάσταση της αποστολής στο SAP:</p>
+<table>
+    <tr><th>Ένδειξη</th><th>Σημασία</th></tr>
+    <tr><td>Spinner (φόρτωση)</td><td>Αποστολή δεδομένων στο SAP σε εξέλιξη</td></tr>
+    <tr><td><span style="color:#388E3C">✓ System has been updated</span></td><td>Τα δεδομένα στάλθηκαν επιτυχώς στο SAP</td></tr>
+    <tr><td><span style="color:#c62828">✗ Αποτυχία αποστολής</span> + κουμπί <em>Επανάληψη</em></td><td>Σφάλμα επικοινωνίας — πατήστε για επανάληψη</td></tr>
+</table>
+
+<div class="warning">
+    <strong>Προϋπόθεση:</strong> Για να λειτουργεί η αυτόματη αποστολή στο SAP, πρέπει να έχετε συμπληρώσει το <strong>URL Power Automate</strong> στις Ρυθμίσεις.
+</div>
+
+<div class="tip">
+    <strong>Συμβουλή:</strong> Αν εμφανιστεί σφάλμα αποστολής στο SAP, τα στοιχεία του παραστατικού εξακολουθούν να εμφανίζονται κανονικά. Μπορείτε να πατήσετε <strong>«Επανάληψη αποστολής»</strong> χωρίς να χρειαστεί νέα αναζήτηση.
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="statuses">9. Καταστάσεις Δελτίου</h2>
+
+<table>
+    <tr><th>Κατάσταση</th><th>Ένδειξη</th><th>Σημασία</th></tr>
+    <tr><td><span class="chip chip-blue">REGISTERED</span></td><td>Μπλε</td><td>Το δελτίο έχει καταχωριστεί στο σύστημα</td></tr>
+    <tr><td><span class="chip chip-yellow">DISPATCHED</span></td><td>Κίτρινο</td><td>Έχει ανατεθεί σε μεταφορέα</td></tr>
+    <tr><td><span class="chip chip-yellow">IN_TRANSIT</span></td><td>Κίτρινο</td><td>Σε μεταφορά</td></tr>
+    <tr><td><span class="chip chip-green">DELIVERED</span></td><td>Πράσινο</td><td>Παραδόθηκε επιτυχώς</td></tr>
+    <tr><td><span class="chip chip-purple">PARTIAL_DELIVERY</span></td><td>Μωβ</td><td>Μερική παράδοση</td></tr>
+    <tr><td><span class="chip chip-red">DELIVERY_FAILED</span></td><td>Κόκκινο</td><td>Η παράδοση απέτυχε</td></tr>
+    <tr><td><span class="chip chip-gray">CANCELLED</span></td><td>Γκρι</td><td>Το δελτίο ακυρώθηκε</td></tr>
+</table>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="errors">10. Συνηθισμένα Σφάλματα</h2>
+
+<table>
+    <tr><th>Σφάλμα</th><th>Αιτία</th><th>Λύση</th></tr>
+    <tr><td>807 Invalid QR</td><td>Το QR δεν ανήκει σε δελτίο αποστολής</td><td>Βεβαιωθείτε ότι σκανάρετε το σωστό QR</td></tr>
+    <tr><td>800 ValidationError</td><td>Το δελτίο δεν επιτρέπει αυτή την ενέργεια</td><td>Ελέγξτε πρώτα την κατάσταση του δελτίου</td></tr>
+    <tr><td>404 Not found</td><td>Ο MARK δεν βρέθηκε στο σύστημα</td><td>Επαληθεύστε τον αριθμό MARK</td></tr>
+    <tr><td>403 Forbidden</td><td>Λάθος διαπιστευτήρια</td><td>Ελέγξτε User ID και Subscription Key στις Ρυθμίσεις</td></tr>
+    <tr><td>Invalid Greek VAT</td><td>Λάθος μορφή ΑΦΜ</td><td>Επαληθεύστε το ΑΦΜ (9 ψηφία)</td></tr>
+    <tr><td>QR resolution failed</td><td>Αδυναμία ανάγνωσης κρυπτογραφημένου QR</td><td>Εισάγετε τον MARK χειροκίνητα</td></tr>
+    <tr><td>No internet connection</td><td>Δεν υπάρχει σύνδεση</td><td>Ελέγξτε Wi-Fi ή δεδομένα κινητής</td></tr>
+    <tr><td>Δεν βρέθηκε παραστατικό</td><td>Ο MARK δεν αντιστοιχεί σε παραστατικό που αφορά τον χρήστη</td><td>Επαληθεύστε τον αριθμό MARK</td></tr>
+    <tr><td>Αποτυχία αποστολής στο SAP</td><td>Πρόβλημα επικοινωνίας με το Power Automate</td><td>Ελέγξτε το URL στις Ρυθμίσεις και πατήστε «Επανάληψη αποστολής»</td></tr>
+</table>
+
+<!-- ══════════════════════════════════════════════ -->
+<h2 id="contact">11. Επικοινωνία &amp; Υποστήριξη</h2>
+
+<p>Για τεχνική υποστήριξη ή απόκτηση διαπιστευτηρίων AADE επικοινωνήστε με:</p>
+<ul>
+    <li><strong>Email:</strong> <a href="mailto:info@stepone.gr">info@stepone.gr</a></li>
+    <li><strong>Ιστότοπος:</strong> <a href="https://stepone.gr" target="_blank">stepone.gr</a></li>
+</ul>
+
+<footer>
+    eDeltio by StepOne SA &nbsp;·&nbsp; <a href="./index.html">Πολιτική Απορρήτου</a>
+</footer>
+
 </body>
 </html>
